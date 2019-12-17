@@ -57,9 +57,9 @@ class Player:
 
 class Comp(Player):
 
-    def __init__(self, name='Computer'):
+    #def __init__(self):      #name='Computer'
         #self.name = name
-        self.card = Card()
+        #self.card = Card()
 
 
     def cross_out(self, num):
@@ -74,7 +74,7 @@ class Comp(Player):
                 if num in self.card.strings[i]:
                     self.card.strings[i][self.card.strings[i].index(num)] = '-'
                     self.card.nums.pop(self.card.nums.index(num))
-            return True
+        return True
 
     #def stats(self):
         #print(f'{self.name}. Осталось {len(self.compnums)} чисел : {self.compnums}')
@@ -82,9 +82,9 @@ class Comp(Player):
 
 class Gamer(Player):
 
-    def __init__(self, name='Gamer'):
+    #def __init__(self):                    #name='Gamer'
         #self.name = name
-        self.card = Card()
+        #self.card = Card()
         #self.nums = self.nums.copy()
 
     def cross_out(self, num):
@@ -129,5 +129,5 @@ class Bag:
     def take_num(self):
         return self.nums.pop(random.randrange(len(self.nums)))        #list.pop([i]) - Возвращает элемент [на указанной позиции], удаляя его из списка
 
-    def stats(self):
-       print(f'В мешке {len(self.nums)} боченков.')
+    #def stats(self):
+       #print(f'В мешке {len(self.nums)} боченков.')
