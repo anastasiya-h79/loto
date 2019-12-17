@@ -9,3 +9,4 @@ def choice_of_gamers(num_of_gamer):
     if player == 'c':
         return loto_classes.Comp()
     return loto_classes.Gamer()
+
