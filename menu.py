@@ -17,7 +17,7 @@ while bag.nums:
             print('Ходит', i + 1, ' игрок.')
         if not gamers[i].cross_out(num):
             gamers[i] = loto_classes.Looser()
-        bag.stats()
+        #bag.stats()
         if gamers[i].is_winning():
             print('Поздравляем! Вы победили!')
             break
